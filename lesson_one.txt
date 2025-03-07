@@ -1,0 +1,6 @@
+golang官網：
+https://go.dev/
+
+執行步驟：
+建置：go build [file name].go 
+執行：go run [file name].go

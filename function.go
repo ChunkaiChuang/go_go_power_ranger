@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 計算 1+2+3+....+max的函式包裝
 // func sum(max int) {
 // 	var result int = 0
@@ -32,7 +30,7 @@ import "fmt"
 // 	show("你好")
 // }
 
-//	func 韓式名稱(參數列表)回傳值資料型態{
+//	func 函式名稱(參數列表)回傳值資料型態{
 //		函式內部程式碼}
 //
 // return 回傳值，須符合定義中的資料型態}
@@ -51,12 +49,12 @@ import "fmt"
 //		函式內部程式碼
 //		return 回傳值1,回傳值2,...
 //	}
-func test() (int, string) {
-	return 10, "Test"
-}
-func main() {
-	var x int
-	var s string
-	x, s = test()
-	fmt.Println(x, s)
-}
+// func test() (int, string) {
+// 	return 10, "Test"
+// }
+// func main() {
+// 	var x int
+// 	var s string
+// 	x, s = test()
+// 	fmt.Println(x, s)
+// }
