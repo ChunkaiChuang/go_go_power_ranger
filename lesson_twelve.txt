@@ -1,0 +1,51 @@
+結構基礎 Strust 
+
+結構：存放其他資料欄位的容器
+定義 > 實體化：要先定義，然後才實體化結構
+
+定義結構
+結構名稱, 包含的資料欄位
+
+基本語法
+type 結構名稱 strust{
+    欄位名稱 資料型態
+    欄位名稱 資料型態
+    ...
+}
+
+程式範例
+type Point strust{
+    x int
+    y int
+}
+
+實體化結構：給定資料，產生結構的實體
+基本語法
+結構名稱{欄位資料, 欄位資料, ...}
+結構名稱{欄位資料:資料, 欄位資料:資料, ...}
+
+程式範例
+type Point strust{
+    x int
+    y int
+}
+func mant(){
+    var p1 Point=Point(3, 4)
+    var p2 Point=Point(y:2, x:1)
+}
+
+欄位中的資料：使用.存取欄位中的資料
+基本語法
+結構實體.欄位名稱
+
+程式範例
+type Point strust{
+    x int
+    y int
+}
+func main(){
+    var p1 Point=Point{3, 4}
+    fmt.Println(p1.x, p1.y)
+}
+
+資料型態：結構是一種資料型態，例如範例中的Point結構
