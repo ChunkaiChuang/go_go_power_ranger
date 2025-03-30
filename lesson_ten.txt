@@ -1,3 +1,27 @@
 指標基礎 Pointer
 
-指標 儲存資料的記憶體位置
+指標: 儲存資料的記憶體位置
+
+基本思考順序
+建立資料變數 > 取得記憶體位址
+存放到指標變數 > 反解指標變數
+
+建立資料變數
+var x int=3
+
+取得記憶體位址
+var x int=3
+// 取得記憶體位址: &變數名稱
+fmt.Println(&x)
+
+存放到指標變數
+var x int=3 
+// 指標資料型態:*資料型態
+var xPtr *int = &x
+fmt.Println(xPtr)
+
+反解指標變數
+var x int=3
+var xPtr *int = &x
+// 反解運算: *指標變數名稱
+fmt.Println(*xPtr)
