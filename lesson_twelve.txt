@@ -1,4 +1,4 @@
-結構基礎 Strust 
+結構基礎 Struct 
 
 結構：存放其他資料欄位的容器
 定義 > 實體化：要先定義，然後才實體化結構
@@ -7,14 +7,14 @@
 結構名稱, 包含的資料欄位
 
 基本語法
-type 結構名稱 strust{
+type 結構名稱 struct{
     欄位名稱 資料型態
     欄位名稱 資料型態
     ...
 }
 
 程式範例
-type Point strust{
+type Point struct{
     x int
     y int
 }
@@ -25,11 +25,11 @@ type Point strust{
 結構名稱{欄位資料:資料, 欄位資料:資料, ...}
 
 程式範例
-type Point strust{
+type Point struct{
     x int
     y int
 }
-func mant(){
+func main(){
     var p1 Point=Point(3, 4)
     var p2 Point=Point(y:2, x:1)
 }
@@ -39,7 +39,7 @@ func mant(){
 結構實體.欄位名稱
 
 程式範例
-type Point strust{
+type Point struct{
     x int
     y int
 }

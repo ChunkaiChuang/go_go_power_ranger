@@ -1,0 +1,36 @@
+指標參數 Pass by Pointer
+
+指標：儲存資料的記憶體位址
+
+函式參數傳遞： 呼叫函式時，資料如何透過參數傳遞
+
+參數傳遞
+// 呼叫函式，傳入參數x
+func main(){
+    var x int = 10
+    add(x)
+    fmt.Println(x)
+}
+
+// 接收參數x，進行加法
+func add(x int){
+    x = x +10
+    fmt.Println(x)
+}
+
+指標餐數傳遞
+// 呼叫函式
+// 建立並傳入指標參數 xPtr
+func main(){
+    var x int=10
+    var xPtr *int=&x
+    add(xPtr)
+    fmt.Println(x)
+}
+
+// 接收指標參數xPtr
+// 反解後進行加法
+func add(xPtr *int){
+    *xPtr=*xPtr+10
+    fmt.Println(*xPtr)
+}

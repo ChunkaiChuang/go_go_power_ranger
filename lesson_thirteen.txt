@@ -1,0 +1,47 @@
+陣列基礎 Array
+
+陣列：按照順序，存放多個相同型態資料的容器
+
+陣列資料型態：[長度]資料型態
+
+陣列資料的編號
+var arr [4]int
+// 陣列[編號]帶俵陣列中的一個資料欄位
+fmt.Println(arr[2])
+
+index  0  1  2  3
+資料    0  0  0  0
+
+陣列的操作：建立陣列、給定資料、巡迴陣列
+
+宣告陣列變數
+var arr1 [4]int
+var arr2 [2]string
+var arr3 [3]bool
+
+給定初始陣列資料
+var arr1 [4]int=[4]int{3, 10, -2, 0}
+var arr2 [2]string=[2]string{"Hello", "World"}
+var arr3 [3]bool=[3]bool{true, false, true}
+
+逐一給定陣列資料
+var arr[4]int
+arr[0]=3
+arr[1]=10
+arr[2]=-2
+arr[3]=0
+
+取得陣列長度
+var arr1 [4]int=[4]int{3, 10, -2,0}
+var arr2 [2]string=[2]string{"Hello","World"}
+// 利用len取得陣列長度
+fmt.Println(len(arr1))
+fmt.Println(len(arr2))
+
+巡迴陣列資料
+// 利用for迴圈資料
+var arr [4]int=[4]int{3, 10 ,-2 , 0}
+var index int
+for inde=0; index<len(arr);index++{
+    fmt.Println(arr[index])
+}
